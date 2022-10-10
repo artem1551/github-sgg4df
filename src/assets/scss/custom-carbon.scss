@@ -1,0 +1,101 @@
+$css--font-face: true;
+$css--helpers: true;
+$css--body: true;
+$css--reset: true;
+$css--default-type: true;
+$css--plex: true;
+
+@import '@carbon/themes/scss/themes';
+@import '@carbon/type';
+@import '@carbon/react/scss/spacing';
+@import '@carbon/react/scss/utilities/z-index';
+@import '@carbon/react/scss/layer';
+@import '@carbon/react/scss/type';
+
+.heading-compact-01 {
+  @include type-style('heading-compact-01', true);
+}
+
+.heading-compact-02 {
+  @include type-style('heading-compact-02', true);
+}
+.heading-03 {
+  @include type-style('heading-03', true);
+
+  @media (min-width: 82rem) {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+.heading-04 {
+  @include type-style('heading-04', true);
+}
+.heading-05 {
+  @include type-style('heading-05', true);
+}
+.heading-06 {
+  @include type-style('heading-06', true);
+}
+
+.body-compact-01 {
+  @include type-style('body-compact-01', true);
+  p {
+    @include type-style('body-compact-01', true);
+  }
+}
+
+.body-compact-02 {
+  @include type-style('body-compact-02', true);
+  p {
+    @include type-style('body-compact-02', true);
+  }
+}
+
+.body-01 {
+  @include type-style('body-01', true);
+
+  p {
+    @include type-style('body-01', true);
+  }
+
+  &.cc-strong {
+    font-weight: bold;
+    color: $text-error;
+  }
+}
+
+.body-02 {
+  @include type-style('body-02', true);
+
+  &.cc-strong {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.label-01 {
+  @include type-style('label-01', true);
+}
+
+.label-02 {
+  @include type-style('label-02', true);
+}
+
+.helper-text-01 {
+  @include type-style('helper-text-01', true);
+}
+
+body .bx--grid {
+  // to be main overwiter
+  margin-left: inherit;
+  margin-right: inherit;
+  padding-left: $spacing-07;
+  padding-right: $spacing-07;
+
+  @media (min-width: 66rem) {
+    .bx--offset-lg-3.bx--col-lg-13 {
+      margin-left: 15rem;
+    }
+  }
+}
