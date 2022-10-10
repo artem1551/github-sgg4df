@@ -6,11 +6,15 @@ const commonConfig = require('./webpack.config.js');
 const developmentConfig = merge(commonConfig, {
   mode: 'development',
   devServer: {
-    contentBase: path.join(__dirname, './src/'),
+    static: {
+      directory: path.join(__dirname, 'public/'),
+    },
     port: 3001,
     historyApiFallback: true,
-    publicPath: 'http://localhost:3001',
-    hotOnly: true,
+    devMiddleware: {
+      publicPath: 'https://localhost:3000/dist/',
+    },
+    hot: 'only',
   },
 });
 
