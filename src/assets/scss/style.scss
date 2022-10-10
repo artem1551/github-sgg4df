@@ -1,0 +1,96 @@
+// // imports from carbon libary
+@import '@carbon/react/scss/components/accordion';
+// @import '@carbon/react/scss/components/button';
+// @use '@carbon/styles/scss/components/tag';
+
+// @use "@carbon/styles/scss/components/checkbox";
+// @use "@carbon/styles/scss/components/date-picker";
+// @use "@carbon/styles/scss/components/dropdown";
+// @use "@carbon/styles/scss/components/combo-box";
+// @use "@carbon/styles/scss/components/file-uploader/file-uploader";
+// @use "@carbon/styles/scss/components/notification/inline-notification";
+// @use "@carbon/styles/scss/components/number-input/number-input";
+// @use "@carbon/styles/scss/components/link/link";
+// @use "@carbon/styles/scss/components/modal/modal";
+// @use "@carbon/styles/scss/components/progress-indicator/progress-indicator";
+// @use "@carbon/styles/scss/components/radio-button/radio-button";
+// @use "@carbon/styles/scss/components/select/select";
+// @use "@carbon/styles/scss/components/ui-shell/ui-shell"; // for menu
+// @use "@carbon/styles/scss/components/text-input/text-input";
+// @use "@carbon/styles/scss/components/text-area/text-area";
+// @use "@carbon/styles/scss/components/tabs/tabs";
+// @use "@carbon/styles/scss/components/tile/tile";
+// @use "@carbon/styles/scss/components/toggle/toggle";
+// @import "@carbon/styles/scss/components/tooltip/tooltip";
+// @import "@carbon/styles/scss/utilities/skeleton";
+
+// // data table
+// @import "@carbon/styles/scss/components/data-table";
+// @import "@carbon/styles/scss/components/search/search";
+
+// // FIXME
+// @use "@carbon/styles/scss/components/toolbar";
+
+@import 'custom-carbon';
+@import 'global';
+
+// //custom components
+@import '/src/Pages/Project/Project';
+@import '/src/Pages/Competitions/Competitions';
+@import '/src/components/global/BackTo/BackTo';
+@import '/src/components/global/Cards/CardEvaluation';
+@import '/src/components/global/Cards/CardIcon';
+@import '/src/components/global/Cards/CardProject';
+@import '/src/components/global/Cards/CardRequire';
+@import '/src/components/global/Cards/Content/PreciseBox';
+@import '/src/components/global/Datatables/Table';
+@import '/src/components/global/Header/Header';
+@import '/src/components/global/Hero/hero';
+@import '/src/components/global/Modals/Modals';
+// @import "/src/components/global/RichText/RichText";
+@import '/src/components/global/Statistics/statistics';
+@import '/src/components/global/CountdownTimer/countdownTimer';
+// @import "/src/components/global/TimeInput/TimeInput";
+@import '/src/components/global/Tiles/cardTile';
+@import '/src/components/global/Title/Title';
+@import '/src/components/global/Comments/Comments.scss';
+
+@import 'themes';
+
+:root {
+  @include theme($g10);
+}
+
+// $prefix: "cds" !default;
+// @use "@carbon/react";
+// @use "@carbon/react/scss/reset" as *;
+// @use "@carbon/react/scss/grid" as *;
+// @use "@carbon/react/scss/type" as *;
+// @use "@carbon/react/scss/zone" as *;
+// @use "@carbon/react/scss/colors" as *;
+// @use "@carbon/react/scss/themes" as *;
+// @use "@carbon/react/scss/spacing" as *;
+// @use "@carbon/react/scss/breakpoint" as *;
+// @use "@carbon/react/scss/feature-flags" as *;
+// @use "@carbon/react/scss/theme" as *;
+// .cds--content {
+//     background: var(--cds-background);
+//     margin-top: 3.0rem;
+//     min-height: calc(100vh - 3.0rem);
+// }
+// html {
+//     @include theme($g100);
+// }
+// .cds--content .cds--css-grid {
+//     max-width: 100%;
+//     @include breakpoint(md) {
+//         padding-left:  20px;
+//         padding-right: 20px;
+//     }
+// }
+// @media (min-width: 42rem) {
+//     .cds--grid--no-gutter {
+//         padding-left:  1rem;
+//         padding-right: 1rem;
+//     }
+// }
